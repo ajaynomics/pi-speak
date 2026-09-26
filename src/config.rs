@@ -98,7 +98,7 @@ impl Default for Config {
         let kokoro_speed = std::env::var("PI_SPEAK_SPEED")
             .ok()
             .and_then(|s| s.parse::<f32>().ok())
-            .unwrap_or(1.75);
+            .unwrap_or(1.45);
 
         Self {
             socket_path,
