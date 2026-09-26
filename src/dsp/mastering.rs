@@ -1,5 +1,5 @@
-/// Linear output gain (3.0x ≈ +9.5 dB).
-pub const OUTPUT_GAIN: f32 = 3.0;
+/// Linear output gain (2.5x ≈ +8 dB).
+pub const OUTPUT_GAIN: f32 = 2.5;
 
 /// Audio mastering processor: applies soft-knee limiting and cross-fading.
 #[derive(Debug, Clone)]
@@ -26,7 +26,7 @@ impl AudioMaster {
         }
     }
 
-    /// In-place output gain applied before limiting (~+9.5 dB), so speech sits
+    /// In-place output gain applied before limiting (~+8 dB), so speech sits
     /// louder while the limiter still catches peaks.
     pub fn apply_gain(&self, samples: &mut [f32]) {
         for sample in samples.iter_mut() {
