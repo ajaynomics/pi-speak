@@ -119,7 +119,7 @@ Speech starts automatically. While the assistant responds, you hear it sentence 
 | `PI_SPEAK_MODELS_DIR` | Models directory override (default: `./models`, then exe-relative, `~/.local/share/pi-speak/models`) |
 | `PI_SPEAK_SOCKET` | Unix socket path (default: `$XDG_RUNTIME_DIR/pi-speak.sock`, else `/tmp/pi-speak.sock`) |
 | `PI_SPEAK_VOICE` | Default voice (default: `jarvis`) |
-| `PI_SPEAK_SPEED` | Default speed multiplier (default: `1.45`) |
+| `PI_SPEAK_SPEED` | Default speed multiplier (default: `1.15`) |
 | `ORT_DYLIB_PATH` | Path to `libonnxruntime.so` |
 
 ## Architecture
