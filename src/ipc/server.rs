@@ -259,6 +259,7 @@ impl DaemonServer {
                                 if !pcm.is_empty() {
                                     match resampler.resample_pcm16_to_stereo_f32(&pcm) {
                                         Ok(mut stereo_samples) => {
+                                            master.apply_gain(&mut stereo_samples);
                                             master.apply_limiting(&mut stereo_samples);
                                             master.apply_edge_fades(&mut stereo_samples, 240, 2);
 

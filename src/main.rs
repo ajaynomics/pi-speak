@@ -35,8 +35,8 @@ enum Commands {
         #[arg(long, default_value = "jarvis")]
         voice: String,
 
-        /// Default speaking speed multiplier (default: 1.15)
-        #[arg(long, default_value = "1.15")]
+        /// Default speaking speed multiplier (default: 1.75)
+        #[arg(long, default_value = "1.75")]
         speed: f32,
     },
     /// Speak a given text sentence immediately
